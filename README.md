@@ -57,6 +57,6 @@
 ## 📬 Connect With Me
 
 - **Email:** [sanmugapriyan2021@gmail.com](mailto:sanmugapriyan2021@gmail.com)
-- **LinkedIn:** [linkedin.com/in/sanmugapriyan](https://www.linkedin.com/in/sanmugapriyan)
+- **LinkedIn:** [linkedin.com/in/sanmugapriyan](https://www.linkedin.com/in/sanmugapriyan-sowndrapandian-443132261/)
 - **GitHub:** [github.com/sanmugapriyan2021-alt](https://github.com/sanmugapriyan2021-alt)
 - **Phone / WhatsApp:** +91 843 853 9264
