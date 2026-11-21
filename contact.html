@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Terminal | Sanmuga Priyan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="g-appbar">
+  <div class="g-appbar-inner">
+    <a href="index.html" class="g-brand">
+      <div class="g-dots">
+        <span class="g-dot b"></span>
+        <span class="g-dot r"></span>
+        <span class="g-dot y"></span>
+        <span class="g-dot g"></span>
+      </div>
+      <span class="g-brand-text">Sanmuga Priyan <span class="g-brand-tag">MCA '26</span></span>
+    </a>
+
+    <div class="g-search-trigger" title="Press Ctrl + K to search">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg>
+      <span>Search projects, case studies, skills...</span>
+      <kbd>Ctrl K</kbd>
+    </div>
+
+    <div class="g-nav-actions">
+      <nav class="g-nav-links">
+        <a href="index.html" class="g-nav-link ">Home</a>
+        <a href="projects.html" class="g-nav-link ">Projects</a>
+        <a href="about.html" class="g-nav-link ">About</a>
+        <a href="contact.html" class="g-nav-link active">Contact</a>
+      </nav>
+
+      <!-- Google 9-dots Waffle Menu -->
+      <div style="position: relative;">
+        <button class="g-waffle-btn" id="waffleBtn" aria-label="Google Apps Menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <circle cx="5" cy="5" r="2.2"></circle><circle cx="12" cy="5" r="2.2"></circle><circle cx="19" cy="5" r="2.2"></circle>
+            <circle cx="5" cy="12" r="2.2"></circle><circle cx="12" cy="12" r="2.2"></circle><circle cx="19" cy="12" r="2.2"></circle>
+            <circle cx="5" cy="19" r="2.2"></circle><circle cx="12" cy="19" r="2.2"></circle><circle cx="19" cy="19" r="2.2"></circle>
+          </svg>
+        </button>
+
+        <div class="g-waffle-menu" id="waffleMenu">
+          <a href="index.html" class="g-app-tile home">
+            <div class="tile-icon">⚡</div>
+            <span>Home</span>
+          </a>
+          <a href="projects.html" class="g-app-tile projects">
+            <div class="tile-icon">📂</div>
+            <span>All Projects</span>
+          </a>
+          <a href="project-dsdesigner.html" class="g-app-tile ds">
+            <div class="tile-icon">👗</div>
+            <span>D's Designer</span>
+          </a>
+          <a href="project-water-dispenser.html" class="g-app-tile water">
+            <div class="tile-icon">💧</div>
+            <span>IoT Dispenser</span>
+          </a>
+          <a href="project-crop-disease.html" class="g-app-tile crop">
+            <div class="tile-icon">🌿</div>
+            <span>Crop AI</span>
+          </a>
+          <a href="about.html" class="g-app-tile about">
+            <div class="tile-icon">🎓</div>
+            <span>About & NCC</span>
+          </a>
+          <a href="contact.html" class="g-app-tile contact">
+            <div class="tile-icon">💬</div>
+            <span>Contact</span>
+          </a>
+        </div>
+      </div>
+
+      <a href="about.html" class="g-appbar-avatar" title="View Sanmuga Priyan Profile">
+        <img src="assets/profile_nobg.png" alt="Sanmuga Priyan Avatar">
+      </a>
+    </div>
+  </div>
+</header>
+
+
+<section class="g-section" style="padding-top: 3rem;">
+  <div class="g-section-header" style="text-align: center; align-items: center;">
+    <div class="g-status-pill">
+      <span class="g-status-indicator"></span>
+      <span>Direct Contact Channel &bull; Responses within 24 Hours</span>
+    </div>
+    <h1 class="g-section-title" style="font-size: 2.75rem;">Let's Build Something Exceptional</h1>
+    <p class="g-section-subtitle">
+      Whether you need a commercial web application, embedded IoT solution, or software collaboration, reach out directly.
+    </p>
+  </div>
+
+  <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 3rem; align-items: start; max-width: 1100px; margin: 0 auto;">
+    <!-- Interactive WhatsApp Brief Composer -->
+    <div class="g-card" style="padding: 2.25rem; border-color: rgba(37, 211, 102, 0.3);">
+      <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.25rem;">
+        <span style="font-size: 1.8rem;">💬</span>
+        <div>
+          <h2 style="font-size: 1.35rem; color: #fff;">WhatsApp Quick Brief Composer</h2>
+          <p style="color: var(--g-text-secondary); font-size: 0.85rem;">Construct a formatted brief that opens directly in WhatsApp with one click:</p>
+        </div>
+      </div>
+
+      <form id="waForm" style="display: flex; flex-direction: column; gap: 1.25rem;">
+        <div>
+          <label style="display: block; font-size: 0.82rem; color: var(--g-text-secondary); margin-bottom: 0.4rem;">YOUR NAME</label>
+          <input type="text" id="waName" required placeholder="e.g. Alex Sharma" style="width: 100%; background: var(--g-surface-elevated); border: 1px solid var(--g-border); border-radius: var(--radius-sm); padding: 0.75rem 1rem; color: #fff; font-family: var(--font-sans); outline: none;">
+        </div>
+
+        <div>
+          <label style="display: block; font-size: 0.82rem; color: var(--g-text-secondary); margin-bottom: 0.4rem;">PROJECT TYPE</label>
+          <select id="waType" style="width: 100%; background: var(--g-surface-elevated); border: 1px solid var(--g-border); border-radius: var(--radius-sm); padding: 0.75rem 1rem; color: #fff; font-family: var(--font-sans); outline: none;">
+            <option value="Full-Stack Web Development">Full-Stack Web Application</option>
+            <option value="Commercial E-Commerce Site">Commercial E-Commerce / Boutique Showcase</option>
+            <option value="IoT & Hardware Prototyping">IoT & Embedded Hardware (ESP32 / Robotics)</option>
+            <option value="Machine Learning / Computer Vision">Machine Learning / Computer Vision</option>
+            <option value="Software Engineering Role">Software Engineering Opportunity / Hiring</option>
+          </select>
+        </div>
+
+        <div>
+          <label style="display: block; font-size: 0.82rem; color: var(--g-text-secondary); margin-bottom: 0.4rem;">PROJECT BRIEF OR MESSAGE</label>
+          <textarea id="waMsg" rows="4" required placeholder="Describe your timeline, scope, or questions..." style="width: 100%; background: var(--g-surface-elevated); border: 1px solid var(--g-border); border-radius: var(--radius-sm); padding: 0.75rem 1rem; color: #fff; font-family: var(--font-sans); outline: none; resize: vertical;"></textarea>
+        </div>
+
+        <button type="submit" class="g-btn g-btn-whatsapp" style="width: 100%; justify-content: center; padding: 0.9rem;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/></svg>
+          Send Formatted WhatsApp Message
+        </button>
+      </form>
+    </div>
+
+    <!-- Direct Coordinates & Contact Cards -->
+    <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+      <div class="g-card" style="padding: 1.75rem;">
+        <h3 style="font-size: 1.1rem; color: #fff; margin-bottom: 1.25rem;">Direct Coordinates</h3>
+        
+        <div style="display: flex; flex-direction: column; gap: 1.25rem;">
+          <a href="mailto:sanmugapriyan2021@gmail.com" style="display: flex; align-items: center; gap: 1rem; color: var(--g-text-primary);">
+            <div style="width: 44px; height: 44px; border-radius: 12px; background: var(--g-blue-container); color: var(--g-blue); display: flex; align-items: center; justify-content: center; font-size: 1.2rem;">
+              ✉️
+            </div>
+            <div>
+              <div style="font-size: 0.78rem; color: var(--g-text-tertiary);">PRIMARY EMAIL</div>
+              <div style="font-weight: 500;">sanmugapriyan2021@gmail.com</div>
+            </div>
+          </a>
+
+          <a href="tel:+917812836262" style="display: flex; align-items: center; gap: 1rem; color: var(--g-text-primary);">
+            <div style="width: 44px; height: 44px; border-radius: 12px; background: var(--g-green-container); color: var(--g-green); display: flex; align-items: center; justify-content: center; font-size: 1.2rem;">
+              📞
+            </div>
+            <div>
+              <div style="font-size: 0.78rem; color: var(--g-text-tertiary);">PHONE & WHATSAPP</div>
+              <div style="font-weight: 500;">+91 7812836262</div>
+            </div>
+          </a>
+
+          <a href="https://github.com/sanmugapriyan2021-alt" target="_blank" style="display: flex; align-items: center; gap: 1rem; color: var(--g-text-primary);">
+            <div style="width: 44px; height: 44px; border-radius: 12px; background: rgba(255, 255, 255, 0.08); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 1.2rem;">
+              🐙
+            </div>
+            <div>
+              <div style="font-size: 0.78rem; color: var(--g-text-tertiary);">GITHUB REPOSITORY</div>
+              <div style="font-weight: 500;">@sanmugapriyan2021-alt ↗</div>
+            </div>
+          </a>
+
+          <div style="display: flex; align-items: center; gap: 1rem; color: var(--g-text-primary);">
+            <div style="width: 44px; height: 44px; border-radius: 12px; background: var(--g-yellow-container); color: var(--g-yellow); display: flex; align-items: center; justify-content: center; font-size: 1.2rem;">
+              📍
+            </div>
+            <div>
+              <div style="font-size: 0.78rem; color: var(--g-text-tertiary);">LOCATION</div>
+              <div style="font-weight: 500;">Coimbatore, Tamil Nadu, India</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="g-card" style="padding: 1.75rem;">
+        <h3 style="font-size: 1.1rem; color: #fff; margin-bottom: 0.75rem;">Availability Notice</h3>
+        <p style="color: var(--g-text-secondary); font-size: 0.9rem; line-height: 1.6;">
+          Currently open for full-time Software Engineer, Frontend Engineer, and IoT/Full-Stack roles starting 2026, as well as high-impact freelance consulting.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="g-footer">
+  <div class="g-footer-inner">
+    <div class="g-footer-col">
+      <div class="g-brand" style="margin-bottom: 1rem;">
+        <div class="g-dots">
+          <span class="g-dot b"></span><span class="g-dot r"></span><span class="g-dot y"></span><span class="g-dot g"></span>
+        </div>
+        <span>Sanmuga Priyan</span>
+      </div>
+      <p style="color: var(--g-text-secondary); font-size: 0.9rem; line-height: 1.6; max-width: 320px;">
+        MCA Scholar at PSG College of Technology & NCC Senior Under Officer. Specialized in Full-Stack Web Systems, IoT Automation, and Computer Vision.
+      </p>
+      <div style="margin-top: 1.25rem; display: flex; gap: 0.75rem;">
+        <a href="https://wa.me/917812836262?text=Hi%20Sanmuga,%20I%20reviewed%20your%20portfolio" target="_blank" class="g-btn g-btn-whatsapp" style="padding: 0.4rem 0.9rem; font-size: 0.8rem;">
+          WhatsApp Quick Chat
+        </a>
+      </div>
+    </div>
+
+    <div class="g-footer-col">
+      <h4>Navigation Pages</h4>
+      <ul class="g-footer-links">
+        <li><a href="index.html">Home Portal</a></li>
+        <li><a href="projects.html">All Projects Catalog</a></li>
+        <li><a href="about.html">About & Credentials</a></li>
+        <li><a href="contact.html">Contact Terminal</a></li>
+      </ul>
+    </div>
+
+    <div class="g-footer-col">
+      <h4>Featured Case Studies</h4>
+      <ul class="g-footer-links">
+        <li><a href="project-dsdesigner.html">D's Designer (Commercial Web)</a></li>
+        <li><a href="project-water-dispenser.html">IoT Smart Water Dispenser</a></li>
+        <li><a href="project-crop-disease.html">Crop Disease AI Classifier</a></li>
+        <li><a href="https://dsdesigner.co.in" target="_blank">Live Client: dsdesigner.co.in ↗</a></li>
+      </ul>
+    </div>
+
+    <div class="g-footer-col">
+      <h4>Direct Coordinates</h4>
+      <ul class="g-footer-links">
+        <li><a href="mailto:sanmugapriyan2021@gmail.com">sanmugapriyan2021@gmail.com</a></li>
+        <li><a href="tel:+917812836262">+91 7812836262</a></li>
+        <li><a href="https://github.com/sanmugapriyan2021-alt" target="_blank">GitHub @sanmugapriyan2021-alt ↗</a></li>
+        <li><span style="color: var(--g-text-tertiary);">Coimbatore, TN, India</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="g-footer-bottom">
+    <span>&copy; 2026 Sanmuga Priyan. Built with Google Modern Cyber-Dark System.</span>
+    <span>Coimbatore, Tamil Nadu &bull; PSG College of Technology</span>
+  </div>
+</footer>
+
+<!-- Google Search Palette Modal -->
+<div class="g-modal-overlay" id="paletteModal">
+  <div class="g-palette">
+    <div class="g-palette-header">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--g-blue)" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg>
+      <input type="text" class="g-palette-input" id="paletteInput" placeholder="Search pages, projects, skills, or contact..." autocomplete="off">
+      <kbd style="font-size: 0.75rem; color: var(--g-text-tertiary);">ESC</kbd>
+    </div>
+    <div class="g-palette-list" id="paletteList">
+      <a href="project-dsdesigner.html" class="g-palette-item">
+        <span style="font-size: 1.2rem;">👗</span>
+        <div>
+          <div class="item-title">D's Designer - Fashion Boutique Showcase</div>
+          <div class="item-desc">Client production e-commerce site with live catalog & WhatsApp ordering</div>
+        </div>
+      </a>
+      <a href="project-water-dispenser.html" class="g-palette-item">
+        <span style="font-size: 1.2rem;">💧</span>
+        <div>
+          <div class="item-title">IoT Smart Water Dispenser System</div>
+          <div class="item-desc">ESP32 embedded microcontroller with ultrasonic sensor & relay logic</div>
+        </div>
+      </a>
+      <a href="project-crop-disease.html" class="g-palette-item">
+        <span style="font-size: 1.2rem;">🌿</span>
+        <div>
+          <div class="item-title">AI Crop Disease Detector</div>
+          <div class="item-desc">Deep learning computer vision CNN with 96.8% diagnostic accuracy</div>
+        </div>
+      </a>
+      <a href="projects.html" class="g-palette-item">
+        <span style="font-size: 1.2rem;">📂</span>
+        <div>
+          <div class="item-title">All Projects Portfolio</div>
+          <div class="item-desc">Browse complete catalog of software, hardware, and client projects</div>
+        </div>
+      </a>
+      <a href="about.html" class="g-palette-item">
+        <span style="font-size: 1.2rem;">🎓</span>
+        <div>
+          <div class="item-title">About Me & Credentials</div>
+          <div class="item-desc">PSG College of Tech MCA, Dr NGP BCA, NCC SUO Rank & B/C Certificates</div>
+        </div>
+      </a>
+      <a href="contact.html" class="g-palette-item">
+        <span style="font-size: 1.2rem;">💬</span>
+        <div>
+          <div class="item-title">Contact & WhatsApp Generator</div>
+          <div class="item-desc">Direct project brief composer, phone, email & Coimbatore coordinates</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+
+<script src="js/main.js"></script>
+<script>
+// WhatsApp Brief Composer
+document.getElementById('waForm').addEventListener('submit', (e) => {
+  e.preventDefault();
+  const name = document.getElementById('waName').value.trim();
+  const type = document.getElementById('waType').value;
+  const msg = document.getElementById('waMsg').value.trim();
+
+  const text = `*New Project Inquiry via Portfolio*%0A%0A*Name:* ${encodeURIComponent(name)}%0A*Category:* ${encodeURIComponent(type)}%0A*Message:* ${encodeURIComponent(msg)}`;
+  const url = `https://wa.me/917812836262?text=${text}`;
+  window.open(url, '_blank');
+});
+</script>
+</body>
+</html>

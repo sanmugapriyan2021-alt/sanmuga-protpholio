@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crop Disease AI Detector | Sanmuga Priyan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="g-appbar">
+  <div class="g-appbar-inner">
+    <a href="index.html" class="g-brand">
+      <div class="g-dots">
+        <span class="g-dot b"></span>
+        <span class="g-dot r"></span>
+        <span class="g-dot y"></span>
+        <span class="g-dot g"></span>
+      </div>
+      <span class="g-brand-text">Sanmuga Priyan <span class="g-brand-tag">MCA '26</span></span>
+    </a>
+
+    <div class="g-search-trigger" title="Press Ctrl + K to search">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg>
+      <span>Search projects, case studies, skills...</span>
+      <kbd>Ctrl K</kbd>
+    </div>
+
+    <div class="g-nav-actions">
+      <nav class="g-nav-links">
+        <a href="index.html" class="g-nav-link ">Home</a>
+        <a href="projects.html" class="g-nav-link active">Projects</a>
+        <a href="about.html" class="g-nav-link ">About</a>
+        <a href="contact.html" class="g-nav-link ">Contact</a>
+      </nav>
+
+      <!-- Google 9-dots Waffle Menu -->
+      <div style="position: relative;">
+        <button class="g-waffle-btn" id="waffleBtn" aria-label="Google Apps Menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <circle cx="5" cy="5" r="2.2"></circle><circle cx="12" cy="5" r="2.2"></circle><circle cx="19" cy="5" r="2.2"></circle>
+            <circle cx="5" cy="12" r="2.2"></circle><circle cx="12" cy="12" r="2.2"></circle><circle cx="19" cy="12" r="2.2"></circle>
+            <circle cx="5" cy="19" r="2.2"></circle><circle cx="12" cy="19" r="2.2"></circle><circle cx="19" cy="19" r="2.2"></circle>
+          </svg>
+        </button>
+
+        <div class="g-waffle-menu" id="waffleMenu">
+          <a href="index.html" class="g-app-tile home">
+            <div class="tile-icon">⚡</div>
+            <span>Home</span>
+          </a>
+          <a href="projects.html" class="g-app-tile projects">
+            <div class="tile-icon">📂</div>
+            <span>All Projects</span>
+          </a>
+          <a href="project-dsdesigner.html" class="g-app-tile ds">
+            <div class="tile-icon">👗</div>
+            <span>D's Designer</span>
+          </a>
+          <a href="project-water-dispenser.html" class="g-app-tile water">
+            <div class="tile-icon">💧</div>
+            <span>IoT Dispenser</span>
+          </a>
+          <a href="project-crop-disease.html" class="g-app-tile crop">
+            <div class="tile-icon">🌿</div>
+            <span>Crop AI</span>
+          </a>
+          <a href="about.html" class="g-app-tile about">
+            <div class="tile-icon">🎓</div>
+            <span>About & NCC</span>
+          </a>
+          <a href="contact.html" class="g-app-tile contact">
+            <div class="tile-icon">💬</div>
+            <span>Contact</span>
+          </a>
+        </div>
+      </div>
+
+      <a href="about.html" class="g-appbar-avatar" title="View Sanmuga Priyan Profile">
+        <img src="assets/profile_nobg.png" alt="Sanmuga Priyan Avatar">
+      </a>
+    </div>
+  </div>
+</header>
+
+
+<article class="g-section" style="padding-top: 3rem;">
+  <div style="margin-bottom: 2rem;">
+    <a href="projects.html" class="g-link-btn" style="color: var(--g-text-secondary); margin-bottom: 1rem;">
+      &larr; Back to All Projects
+    </a>
+    <div class="g-status-pill" style="color: var(--g-yellow); background: rgba(253, 214, 99, 0.1); border-color: rgba(253, 214, 99, 0.3);">
+      <span>Computer Vision &bull; Deep Learning Convolutional Network</span>
+    </div>
+    <h1 class="g-hero-title" style="font-size: 2.75rem; margin-top: 0.75rem;">
+      AI Crop Pathology Diagnostic System
+    </h1>
+    <p class="g-hero-desc">
+      A transfer-learning convolutional neural network pipeline identifying 38 foliar disease classes across 14 crops with 96.8% accuracy.
+    </p>
+  </div>
+
+  <div style="display: grid; grid-template-columns: 1.8fr 1.2fr; gap: 2.5rem; align-items: start;">
+    <div style="display: flex; flex-direction: column; gap: 2rem;">
+      <!-- Interactive Model Diagnostic Playground -->
+      <div class="g-card" style="padding: 2rem; border-color: rgba(253, 214, 99, 0.3);">
+        <h2 style="font-size: 1.4rem; color: #fff; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
+          <span>🔬</span> Interactive Model Inference Playground
+        </h2>
+        <p style="color: var(--g-text-secondary); font-size: 0.92rem; margin-bottom: 1.5rem;">
+          Select a plant specimen sample to execute the simulated MobileNetV2 classification engine:
+        </p>
+
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem; margin-bottom: 1.5rem;">
+          <button class="g-btn g-btn-tonal sample-btn active" data-sample="tomato" style="flex-direction: column; padding: 1rem 0.5rem; gap: 0.3rem;">
+            <span style="font-size: 1.6rem;">🍅</span>
+            <span style="font-size: 0.8rem;">Tomato Early Blight</span>
+          </button>
+          <button class="g-btn g-btn-tonal sample-btn" data-sample="potato" style="flex-direction: column; padding: 1rem 0.5rem; gap: 0.3rem;">
+            <span style="font-size: 1.6rem;">🥔</span>
+            <span style="font-size: 0.8rem;">Potato Late Blight</span>
+          </button>
+          <button class="g-btn g-btn-tonal sample-btn" data-sample="corn" style="flex-direction: column; padding: 1rem 0.5rem; gap: 0.3rem;">
+            <span style="font-size: 1.6rem;">🌽</span>
+            <span style="font-size: 0.8rem;">Healthy Corn Maize</span>
+          </button>
+        </div>
+
+        <!-- Inference Output Card -->
+        <div style="background: #11140e; border: 1px solid var(--g-border); border-radius: var(--radius-sm); padding: 1.5rem;">
+          <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+            <span style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--g-yellow);" id="diagTitle">PREDICTION: Tomato Early Blight (Alternaria solani)</span>
+            <span style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--g-green);" id="diagConf">98.4% Confidence</span>
+          </div>
+          <div style="width: 100%; height: 8px; background: rgba(255,255,255,0.08); border-radius: var(--radius-full); overflow: hidden; margin-bottom: 1rem;">
+            <div id="diagBar" style="width: 98.4%; height: 100%; background: var(--g-green); transition: width 0.4s ease;"></div>
+          </div>
+          <p id="diagDesc" style="font-size: 0.85rem; color: var(--g-text-secondary); line-height: 1.5;">
+            Concentric brown rings detected on foliar margins. Recommended remedy: Copper-based fungicidal spray and aeration spacing between rows.
+          </p>
+        </div>
+      </div>
+
+      <!-- Dataset & Training Pipeline -->
+      <div class="g-card" style="padding: 2rem;">
+        <h2 style="font-size: 1.4rem; color: #fff; margin-bottom: 1rem;">Deep Learning Pipeline</h2>
+        <ul style="list-style: none; display: flex; flex-direction: column; gap: 1rem;">
+          <li style="display: flex; gap: 0.75rem; align-items: flex-start;">
+            <span style="color: var(--g-yellow); font-size: 1.2rem;">&#10004;</span>
+            <div>
+              <strong style="color: #fff;">Dataset Preprocessing:</strong>
+              <p style="color: var(--g-text-secondary); font-size: 0.92rem;">PlantVillage benchmark composed of 54,305 curated images across 38 distinct crop-disease combinations, augmented with rotational and contrast shifts.</p>
+            </div>
+          </li>
+          <li style="display: flex; gap: 0.75rem; align-items: flex-start;">
+            <span style="color: var(--g-yellow); font-size: 1.2rem;">&#10004;</span>
+            <div>
+              <strong style="color: #fff;">Transfer Learning Architecture:</strong>
+              <p style="color: var(--g-text-secondary); font-size: 0.92rem;">Utilized MobileNetV2 with inverted residual blocks for lightweight, low-latency mobile device inference (42ms/frame on CPU).</p>
+            </div>
+          </li>
+          <li style="display: flex; gap: 0.75rem; align-items: flex-start;">
+            <span style="color: var(--g-yellow); font-size: 1.2rem;">&#10004;</span>
+            <div>
+              <strong style="color: #fff;">Evaluation Metrics:</strong>
+              <p style="color: var(--g-text-secondary); font-size: 0.92rem;">Achieved 96.8% top-1 validation accuracy, 0.97 F1-score across non-healthy plant foliage classes.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Sidebar Technical Metrics -->
+    <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+      <div class="g-card" style="padding: 1.75rem;">
+        <h3 style="font-size: 1rem; color: #fff; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 0.05em; border-bottom: 1px solid var(--g-border); padding-bottom: 0.5rem;">
+          Model Metrics
+        </h3>
+        <div style="display: flex; flex-direction: column; gap: 0.85rem; font-size: 0.9rem;">
+          <div>
+            <div style="color: var(--g-text-tertiary); font-size: 0.75rem;">ARCHITECTURE</div>
+            <div style="color: #fff; font-weight: 500;">MobileNetV2 Transfer Learning</div>
+          </div>
+          <div>
+            <div style="color: var(--g-text-tertiary); font-size: 0.75rem;">TRAINING SAMPLES</div>
+            <div style="color: #fff; font-weight: 500;">54,305 PlantVillage Images</div>
+          </div>
+          <div>
+            <div style="color: var(--g-text-tertiary); font-size: 0.75rem;">CLASSES</div>
+            <div style="color: #fff; font-weight: 500;">38 Pathology Class Labels</div>
+          </div>
+          <div>
+            <div style="color: var(--g-text-tertiary); font-size: 0.75rem;">TOP-1 ACCURACY</div>
+            <div style="color: var(--g-yellow); font-weight: 700; font-size: 1.1rem;">96.8% Precision</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="g-card" style="padding: 1.75rem;">
+        <h3 style="font-size: 1rem; color: #fff; margin-bottom: 1rem;">Other Case Studies</h3>
+        <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+          <a href="project-dsdesigner.html" class="g-link-btn" style="color: #ff8595;">
+            👗 D's Designer Couture Showcase &rarr;
+          </a>
+          <a href="project-water-dispenser.html" class="g-link-btn" style="color: var(--g-cyan);">
+            💧 Smart IoT Water Dispenser &rarr;
+          </a>
+          <a href="contact.html" class="g-link-btn" style="color: var(--g-green);">
+            💬 Contact Sanmuga Priyan &rarr;
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+
+<footer class="g-footer">
+  <div class="g-footer-inner">
+    <div class="g-footer-col">
+      <div class="g-brand" style="margin-bottom: 1rem;">
+        <div class="g-dots">
+          <span class="g-dot b"></span><span class="g-dot r"></span><span class="g-dot y"></span><span class="g-dot g"></span>
+        </div>
+        <span>Sanmuga Priyan</span>
+      </div>
+      <p style="color: var(--g-text-secondary); font-size: 0.9rem; line-height: 1.6; max-width: 320px;">
+        MCA Scholar at PSG College of Technology & NCC Senior Under Officer. Specialized in Full-Stack Web Systems, IoT Automation, and Computer Vision.
+      </p>
+      <div style="margin-top: 1.25rem; display: flex; gap: 0.75rem;">
+        <a href="https://wa.me/917812836262?text=Hi%20Sanmuga,%20I%20reviewed%20your%20portfolio" target="_blank" class="g-btn g-btn-whatsapp" style="padding: 0.4rem 0.9rem; font-size: 0.8rem;">
+          WhatsApp Quick Chat
+        </a>
+      </div>
+    </div>
+
+    <div class="g-footer-col">
+      <h4>Navigation Pages</h4>
+      <ul class="g-footer-links">
+        <li><a href="index.html">Home Portal</a></li>
+        <li><a href="projects.html">All Projects Catalog</a></li>
+        <li><a href="about.html">About & Credentials</a></li>
+        <li><a href="contact.html">Contact Terminal</a></li>
+      </ul>
+    </div>
+
+    <div class="g-footer-col">
+      <h4>Featured Case Studies</h4>
+      <ul class="g-footer-links">
+        <li><a href="project-dsdesigner.html">D's Designer (Commercial Web)</a></li>
+        <li><a href="project-water-dispenser.html">IoT Smart Water Dispenser</a></li>
+        <li><a href="project-crop-disease.html">Crop Disease AI Classifier</a></li>
+        <li><a href="https://dsdesigner.co.in" target="_blank">Live Client: dsdesigner.co.in ↗</a></li>
+      </ul>
+    </div>
+
+    <div class="g-footer-col">
+      <h4>Direct Coordinates</h4>
+      <ul class="g-footer-links">
+        <li><a href="mailto:sanmugapriyan2021@gmail.com">sanmugapriyan2021@gmail.com</a></li>
+        <li><a href="tel:+917812836262">+91 7812836262</a></li>
+        <li><a href="https://github.com/sanmugapriyan2021-alt" target="_blank">GitHub @sanmugapriyan2021-alt ↗</a></li>
+        <li><span style="color: var(--g-text-tertiary);">Coimbatore, TN, India</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="g-footer-bottom">
+    <span>&copy; 2026 Sanmuga Priyan. Built with Google Modern Cyber-Dark System.</span>
+    <span>Coimbatore, Tamil Nadu &bull; PSG College of Technology</span>
+  </div>
+</footer>
+
+<!-- Google Search Palette Modal -->
+<div class="g-modal-overlay" id="paletteModal">
+  <div class="g-palette">
+    <div class="g-palette-header">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--g-blue)" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg>
+      <input type="text" class="g-palette-input" id="paletteInput" placeholder="Search pages, projects, skills, or contact..." autocomplete="off">
+      <kbd style="font-size: 0.75rem; color: var(--g-text-tertiary);">ESC</kbd>
+    </div>
+    <div class="g-palette-list" id="paletteList">
+      <a href="project-dsdesigner.html" class="g-palette-item">
+        <span style="font-size: 1.2rem;">👗</span>
+        <div>
+          <div class="item-title">D's Designer - Fashion Boutique Showcase</div>
+          <div class="item-desc">Client production e-commerce site with live catalog & WhatsApp ordering</div>
+        </div>
+      </a>
+      <a href="project-water-dispenser.html" class="g-palette-item">
+        <span style="font-size: 1.2rem;">💧</span>
+        <div>
+          <div class="item-title">IoT Smart Water Dispenser System</div>
+          <div class="item-desc">ESP32 embedded microcontroller with ultrasonic sensor & relay logic</div>
+        </div>
+      </a>
+      <a href="project-crop-disease.html" class="g-palette-item">
+        <span style="font-size: 1.2rem;">🌿</span>
+        <div>
+          <div class="item-title">AI Crop Disease Detector</div>
+          <div class="item-desc">Deep learning computer vision CNN with 96.8% diagnostic accuracy</div>
+        </div>
+      </a>
+      <a href="projects.html" class="g-palette-item">
+        <span style="font-size: 1.2rem;">📂</span>
+        <div>
+          <div class="item-title">All Projects Portfolio</div>
+          <div class="item-desc">Browse complete catalog of software, hardware, and client projects</div>
+        </div>
+      </a>
+      <a href="about.html" class="g-palette-item">
+        <span style="font-size: 1.2rem;">🎓</span>
+        <div>
+          <div class="item-title">About Me & Credentials</div>
+          <div class="item-desc">PSG College of Tech MCA, Dr NGP BCA, NCC SUO Rank & B/C Certificates</div>
+        </div>
+      </a>
+      <a href="contact.html" class="g-palette-item">
+        <span style="font-size: 1.2rem;">💬</span>
+        <div>
+          <div class="item-title">Contact & WhatsApp Generator</div>
+          <div class="item-desc">Direct project brief composer, phone, email & Coimbatore coordinates</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+
+<script src="js/main.js"></script>
+<script>
+// Interactive Pathology Playground
+(function() {
+  const btns = document.querySelectorAll('.sample-btn');
+  const title = document.getElementById('diagTitle');
+  const conf = document.getElementById('diagConf');
+  const bar = document.getElementById('diagBar');
+  const desc = document.getElementById('diagDesc');
+
+  const data = {
+    tomato: {
+      title: 'PREDICTION: Tomato Early Blight (Alternaria solani)',
+      conf: '98.4% Confidence',
+      bar: '98.4%',
+      color: 'var(--g-green)',
+      desc: 'Concentric brown rings detected on foliar margins. Recommended remedy: Copper-based fungicidal spray and aeration spacing between rows.'
+    },
+    potato: {
+      title: 'PREDICTION: Potato Late Blight (Phytophthora infestans)',
+      conf: '94.2% Confidence',
+      bar: '94.2%',
+      color: 'var(--g-yellow)',
+      desc: 'Dark water-soaked lesions observed with subtle white fungal margin on lower leaf surface. Immediate isolate & systemic fungicide advised.'
+    },
+    corn: {
+      title: 'PREDICTION: Healthy Zea mays (No Pathology Detected)',
+      conf: '99.1% Confidence',
+      bar: '99.1%',
+      color: 'var(--g-green)',
+      desc: 'Uniform chlorophyll distribution with normal leaf venation. No necrotic tissue detected. Crop health status optimal.'
+    }
+  };
+
+  btns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      btns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const item = data[btn.dataset.sample];
+      if (item) {
+        title.textContent = item.title;
+        conf.textContent = item.conf;
+        bar.style.width = item.bar;
+        bar.style.backgroundColor = item.color;
+        desc.textContent = item.desc;
+      }
+    });
+  });
+})();
+</script>
+</body>
+</html>

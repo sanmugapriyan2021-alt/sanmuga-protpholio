@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Water Dispenser Case Study | Sanmuga Priyan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="g-appbar">
+  <div class="g-appbar-inner">
+    <a href="index.html" class="g-brand">
+      <div class="g-dots">
+        <span class="g-dot b"></span>
+        <span class="g-dot r"></span>
+        <span class="g-dot y"></span>
+        <span class="g-dot g"></span>
+      </div>
+      <span class="g-brand-text">Sanmuga Priyan <span class="g-brand-tag">MCA '26</span></span>
+    </a>
+
+    <div class="g-search-trigger" title="Press Ctrl + K to search">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg>
+      <span>Search projects, case studies, skills...</span>
+      <kbd>Ctrl K</kbd>
+    </div>
+
+    <div class="g-nav-actions">
+      <nav class="g-nav-links">
+        <a href="index.html" class="g-nav-link ">Home</a>
+        <a href="projects.html" class="g-nav-link active">Projects</a>
+        <a href="about.html" class="g-nav-link ">About</a>
+        <a href="contact.html" class="g-nav-link ">Contact</a>
+      </nav>
+
+      <!-- Google 9-dots Waffle Menu -->
+      <div style="position: relative;">
+        <button class="g-waffle-btn" id="waffleBtn" aria-label="Google Apps Menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <circle cx="5" cy="5" r="2.2"></circle><circle cx="12" cy="5" r="2.2"></circle><circle cx="19" cy="5" r="2.2"></circle>
+            <circle cx="5" cy="12" r="2.2"></circle><circle cx="12" cy="12" r="2.2"></circle><circle cx="19" cy="12" r="2.2"></circle>
+            <circle cx="5" cy="19" r="2.2"></circle><circle cx="12" cy="19" r="2.2"></circle><circle cx="19" cy="19" r="2.2"></circle>
+          </svg>
+        </button>
+
+        <div class="g-waffle-menu" id="waffleMenu">
+          <a href="index.html" class="g-app-tile home">
+            <div class="tile-icon">⚡</div>
+            <span>Home</span>
+          </a>
+          <a href="projects.html" class="g-app-tile projects">
+            <div class="tile-icon">📂</div>
+            <span>All Projects</span>
+          </a>
+          <a href="project-dsdesigner.html" class="g-app-tile ds">
+            <div class="tile-icon">👗</div>
+            <span>D's Designer</span>
+          </a>
+          <a href="project-water-dispenser.html" class="g-app-tile water">
+            <div class="tile-icon">💧</div>
+            <span>IoT Dispenser</span>
+          </a>
+          <a href="project-crop-disease.html" class="g-app-tile crop">
+            <div class="tile-icon">🌿</div>
+            <span>Crop AI</span>
+          </a>
+          <a href="about.html" class="g-app-tile about">
+            <div class="tile-icon">🎓</div>
+            <span>About & NCC</span>
+          </a>
+          <a href="contact.html" class="g-app-tile contact">
+            <div class="tile-icon">💬</div>
+            <span>Contact</span>
+          </a>
+        </div>
+      </div>
+
+      <a href="about.html" class="g-appbar-avatar" title="View Sanmuga Priyan Profile">
+        <img src="assets/profile_nobg.png" alt="Sanmuga Priyan Avatar">
+      </a>
+    </div>
+  </div>
+</header>
+
+
+<article class="g-section" style="padding-top: 3rem;">
+  <div style="margin-bottom: 2rem;">
+    <a href="projects.html" class="g-link-btn" style="color: var(--g-text-secondary); margin-bottom: 1rem;">
+      &larr; Back to All Projects
+    </a>
+    <div class="g-status-pill" style="color: var(--g-cyan); background: rgba(34, 211, 238, 0.1); border-color: rgba(34, 211, 238, 0.3);">
+      <span>IoT Embedded Systems &bull; Microcontroller Firmware</span>
+    </div>
+    <h1 class="g-hero-title" style="font-size: 2.75rem; margin-top: 0.75rem;">
+      Automated IoT Smart Water Dispenser
+    </h1>
+    <p class="g-hero-desc">
+      A touchless, zero-contact hygienic water dispensing station engineered with ESP32 microcontroller, ultrasonic distance telemetry, and solenoid relay actuation.
+    </p>
+  </div>
+
+  <div style="display: grid; grid-template-columns: 1.8fr 1.2fr; gap: 2.5rem; align-items: start;">
+    <div style="display: flex; flex-direction: column; gap: 2rem;">
+      <!-- Interactive Dispenser Simulator -->
+      <div class="g-card" style="padding: 2rem; border-color: rgba(34, 211, 238, 0.3);">
+        <h2 style="font-size: 1.4rem; color: #fff; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
+          <span>💧</span> Interactive Hardware Simulation
+        </h2>
+        <p style="color: var(--g-text-secondary); font-size: 0.92rem; margin-bottom: 1.5rem;">
+          Test the ultrasonic echo detection and solenoid valve actuation logic directly in your browser:
+        </p>
+
+        <div style="background: #0d1316; border: 1px solid var(--g-border); border-radius: var(--radius-md); padding: 1.5rem; text-align: center;">
+          <div id="simStatus" style="font-family: var(--font-mono); font-size: 0.9rem; color: var(--g-text-secondary); margin-bottom: 1rem;">
+            SENSOR STATUS: IDLE (No object detected &gt; 15cm)
+          </div>
+
+          <!-- Glass Graphic -->
+          <div style="height: 140px; position: relative; display: flex; align-items: flex-end; justify-content: center; margin-bottom: 1.5rem;">
+            <div id="simNozzle" style="position: absolute; top: 0; width: 14px; height: 30px; background: #555; border-radius: 3px;">
+              <div id="simStream" style="position: absolute; top: 30px; left: 4px; width: 6px; height: 0; background: var(--g-cyan); box-shadow: 0 0 10px var(--g-cyan); transition: height 0.3s ease;"></div>
+            </div>
+            <div id="simGlass" style="width: 70px; height: 90px; border: 2px solid rgba(255,255,255,0.4); border-top: none; border-radius: 0 0 10px 10px; position: relative; overflow: hidden; background: rgba(255,255,255,0.03);">
+              <div id="simWater" style="position: absolute; bottom: 0; left: 0; right: 0; height: 0; background: rgba(34, 211, 238, 0.6); transition: height 0.2s linear;"></div>
+            </div>
+          </div>
+
+          <div style="display: flex; justify-content: center; gap: 1rem;">
+            <button class="g-btn g-btn-primary" id="simPlaceBtn" style="background: var(--g-cyan); color: #0d1316;">
+              Place Glass Under Sensor
+            </button>
+            <button class="g-btn g-btn-tonal" id="simResetBtn">
+              Reset
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Firmware Architecture -->
+      <div class="g-card" style="padding: 2rem;">
+        <h2 style="font-size: 1.4rem; color: #fff; margin-bottom: 1rem;">Firmware Logic (ESP32 C++)</h2>
+        <p style="color: var(--g-text-secondary); line-height: 1.6; margin-bottom: 1rem;">
+          The system uses high-frequency ping bursts from the HC-SR04 ultrasonic transducer to detect when a container is placed within the 4cm - 12cm threshold zone. A sliding window debounce prevents accidental splashes or false positives.
+        </p>
+
+        <pre style="background: #0d0f12; border: 1px solid var(--g-border); border-radius: var(--radius-sm); padding: 1.25rem; font-family: var(--font-mono); font-size: 0.82rem; color: #8ab4f8; overflow-x: auto; line-height: 1.5;"><code>#define TRIG_PIN 5
+#define ECHO_PIN 18
+#define RELAY_PIN 23
+#define THRESHOLD_CM 10.0
+
+void loop() {
+  long duration = pingUltrasonic();
+  float distance = duration * 0.034 / 2;
+
+  if (distance > 2.0 && distance &lt;= THRESHOLD_CM) {
+    // Container in proximity - energize solenoid
+    digitalWrite(RELAY_PIN, HIGH);
+  } else {
+    // No container or removed - immediate cutoff
+    digitalWrite(RELAY_PIN, LOW);
+  }
+  delay(100);
+}</code></pre>
+      </div>
+    </div>
+
+    <!-- Sidebar Hardware Specs -->
+    <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+      <div class="g-card" style="padding: 1.75rem;">
+        <h3 style="font-size: 1rem; color: #fff; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 0.05em; border-bottom: 1px solid var(--g-border); padding-bottom: 0.5rem;">
+          Hardware BOM
+        </h3>
+        <div style="display: flex; flex-direction: column; gap: 0.85rem; font-size: 0.9rem;">
+          <div>
+            <div style="color: var(--g-text-tertiary); font-size: 0.75rem;">MICROCONTROLLER</div>
+            <div style="color: #fff; font-weight: 500;">ESP32 Dual-Core SoC 240MHz</div>
+          </div>
+          <div>
+            <div style="color: var(--g-text-tertiary); font-size: 0.75rem;">DISTANCE SENSOR</div>
+            <div style="color: #fff; font-weight: 500;">HC-SR04 Ultrasonic Telemetry</div>
+          </div>
+          <div>
+            <div style="color: var(--g-text-tertiary); font-size: 0.75rem;">ACTUATOR</div>
+            <div style="color: #fff; font-weight: 500;">12V DC Solenoid Valve + 5V Relay</div>
+          </div>
+          <div>
+            <div style="color: var(--g-text-tertiary); font-size: 0.75rem;">CUTOFF RESPONSE</div>
+            <div style="color: var(--g-green); font-weight: 600;">&lt; 50ms latency</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="g-card" style="padding: 1.75rem;">
+        <h3 style="font-size: 1rem; color: #fff; margin-bottom: 1rem;">Next Case Studies</h3>
+        <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+          <a href="project-crop-disease.html" class="g-link-btn" style="color: var(--g-yellow);">
+            🌿 AI Crop Disease Classifier &rarr;
+          </a>
+          <a href="project-dsdesigner.html" class="g-link-btn" style="color: #ff8595;">
+            👗 D's Designer Couture Showcase &rarr;
+          </a>
+          <a href="about.html" class="g-link-btn" style="color: var(--g-blue);">
+            🎓 Academic Journey & NCC SUO &rarr;
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+
+<footer class="g-footer">
+  <div class="g-footer-inner">
+    <div class="g-footer-col">
+      <div class="g-brand" style="margin-bottom: 1rem;">
+        <div class="g-dots">
+          <span class="g-dot b"></span><span class="g-dot r"></span><span class="g-dot y"></span><span class="g-dot g"></span>
+        </div>
+        <span>Sanmuga Priyan</span>
+      </div>
+      <p style="color: var(--g-text-secondary); font-size: 0.9rem; line-height: 1.6; max-width: 320px;">
+        MCA Scholar at PSG College of Technology & NCC Senior Under Officer. Specialized in Full-Stack Web Systems, IoT Automation, and Computer Vision.
+      </p>
+      <div style="margin-top: 1.25rem; display: flex; gap: 0.75rem;">
+        <a href="https://wa.me/917812836262?text=Hi%20Sanmuga,%20I%20reviewed%20your%20portfolio" target="_blank" class="g-btn g-btn-whatsapp" style="padding: 0.4rem 0.9rem; font-size: 0.8rem;">
+          WhatsApp Quick Chat
+        </a>
+      </div>
+    </div>
+
+    <div class="g-footer-col">
+      <h4>Navigation Pages</h4>
+      <ul class="g-footer-links">
+        <li><a href="index.html">Home Portal</a></li>
+        <li><a href="projects.html">All Projects Catalog</a></li>
+        <li><a href="about.html">About & Credentials</a></li>
+        <li><a href="contact.html">Contact Terminal</a></li>
+      </ul>
+    </div>
+
+    <div class="g-footer-col">
+      <h4>Featured Case Studies</h4>
+      <ul class="g-footer-links">
+        <li><a href="project-dsdesigner.html">D's Designer (Commercial Web)</a></li>
+        <li><a href="project-water-dispenser.html">IoT Smart Water Dispenser</a></li>
+        <li><a href="project-crop-disease.html">Crop Disease AI Classifier</a></li>
+        <li><a href="https://dsdesigner.co.in" target="_blank">Live Client: dsdesigner.co.in ↗</a></li>
+      </ul>
+    </div>
+
+    <div class="g-footer-col">
+      <h4>Direct Coordinates</h4>
+      <ul class="g-footer-links">
+        <li><a href="mailto:sanmugapriyan2021@gmail.com">sanmugapriyan2021@gmail.com</a></li>
+        <li><a href="tel:+917812836262">+91 7812836262</a></li>
+        <li><a href="https://github.com/sanmugapriyan2021-alt" target="_blank">GitHub @sanmugapriyan2021-alt ↗</a></li>
+        <li><span style="color: var(--g-text-tertiary);">Coimbatore, TN, India</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="g-footer-bottom">
+    <span>&copy; 2026 Sanmuga Priyan. Built with Google Modern Cyber-Dark System.</span>
+    <span>Coimbatore, Tamil Nadu &bull; PSG College of Technology</span>
+  </div>
+</footer>
+
+<!-- Google Search Palette Modal -->
+<div class="g-modal-overlay" id="paletteModal">
+  <div class="g-palette">
+    <div class="g-palette-header">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--g-blue)" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg>
+      <input type="text" class="g-palette-input" id="paletteInput" placeholder="Search pages, projects, skills, or contact..." autocomplete="off">
+      <kbd style="font-size: 0.75rem; color: var(--g-text-tertiary);">ESC</kbd>
+    </div>
+    <div class="g-palette-list" id="paletteList">
+      <a href="project-dsdesigner.html" class="g-palette-item">
+        <span style="font-size: 1.2rem;">👗</span>
+        <div>
+          <div class="item-title">D's Designer - Fashion Boutique Showcase</div>
+          <div class="item-desc">Client production e-commerce site with live catalog & WhatsApp ordering</div>
+        </div>
+      </a>
+      <a href="project-water-dispenser.html" class="g-palette-item">
+        <span style="font-size: 1.2rem;">💧</span>
+        <div>
+          <div class="item-title">IoT Smart Water Dispenser System</div>
+          <div class="item-desc">ESP32 embedded microcontroller with ultrasonic sensor & relay logic</div>
+        </div>
+      </a>
+      <a href="project-crop-disease.html" class="g-palette-item">
+        <span style="font-size: 1.2rem;">🌿</span>
+        <div>
+          <div class="item-title">AI Crop Disease Detector</div>
+          <div class="item-desc">Deep learning computer vision CNN with 96.8% diagnostic accuracy</div>
+        </div>
+      </a>
+      <a href="projects.html" class="g-palette-item">
+        <span style="font-size: 1.2rem;">📂</span>
+        <div>
+          <div class="item-title">All Projects Portfolio</div>
+          <div class="item-desc">Browse complete catalog of software, hardware, and client projects</div>
+        </div>
+      </a>
+      <a href="about.html" class="g-palette-item">
+        <span style="font-size: 1.2rem;">🎓</span>
+        <div>
+          <div class="item-title">About Me & Credentials</div>
+          <div class="item-desc">PSG College of Tech MCA, Dr NGP BCA, NCC SUO Rank & B/C Certificates</div>
+        </div>
+      </a>
+      <a href="contact.html" class="g-palette-item">
+        <span style="font-size: 1.2rem;">💬</span>
+        <div>
+          <div class="item-title">Contact & WhatsApp Generator</div>
+          <div class="item-desc">Direct project brief composer, phone, email & Coimbatore coordinates</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+
+<script src="js/main.js"></script>
+<script>
+// Interactive Dispenser Simulator Script
+(function() {
+  const placeBtn = document.getElementById('simPlaceBtn');
+  const resetBtn = document.getElementById('simResetBtn');
+  const status = document.getElementById('simStatus');
+  const stream = document.getElementById('simStream');
+  const water = document.getElementById('simWater');
+  let fillInterval = null;
+  let waterHeight = 0;
+
+  placeBtn.addEventListener('click', () => {
+    status.textContent = 'SENSOR: GLASS DETECTED AT 6.2cm -> DISPENSING';
+    status.style.color = 'var(--g-cyan)';
+    stream.style.height = '60px';
+    clearInterval(fillInterval);
+    fillInterval = setInterval(() => {
+      if (waterHeight < 80) {
+        waterHeight += 4;
+        water.style.height = waterHeight + 'px';
+      } else {
+        clearInterval(fillInterval);
+        status.textContent = 'SAFETY CUTOFF: MAX CAPACITY REACHED (Auto-Stop)';
+        status.style.color = 'var(--g-green)';
+        stream.style.height = '0';
+      }
+    }, 100);
+  });
+
+  resetBtn.addEventListener('click', () => {
+    clearInterval(fillInterval);
+    waterHeight = 0;
+    water.style.height = '0';
+    stream.style.height = '0';
+    status.textContent = 'SENSOR STATUS: IDLE (No object detected > 15cm)';
+    status.style.color = 'var(--g-text-secondary)';
+  });
+})();
+</script>
+</body>
+</html>
