@@ -1,62 +1,47 @@
-# 🚀 Sanmuga Priyan — Portfolio Website
+# R. S. Sanmugapriyan — Vibe-Coding Developer Portfolio
 
-[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live%20Demo-00f2fe?style=for-the-badge&logo=github)](https://sanmugapriyan2021-alt.github.io/sanmuga-protpholio/)
-[![Status](https://img.shields.io/badge/Status-Active-10b981?style=for-the-badge)](https://sanmugapriyan2021-alt.github.io/sanmuga-protpholio/)
-[![MCA](https://img.shields.io/badge/Postgraduate-MCA%20%40%20PSG%20Tech-8b5cf6?style=for-the-badge)](https://sanmugapriyan2021-alt.github.io/sanmuga-protpholio/)
+> Modern, ultra-responsive developer portfolio of **R. S. Sanmugapriyan** — Master of Computer Applications (MCA) at PSG College of Technology, Coimbatore. Engineered with the talent of **Vibe Coding** and powered by **Google Antigravity**.
 
-> Modern, ultra-responsive developer portfolio of **Sanmuga Priyan** — Master of Computer Applications (MCA) student at **PSG College of Technology, Trichy**, specializing in Artificial Intelligence, Machine Learning, and Full-Stack Engineering.
-
----
-
-## 🌟 Live Preview
-
-🔗 **View Portfolio:** [https://sanmugapriyan2021-alt.github.io/sanmuga-protpholio/](https://sanmugapriyan2021-alt.github.io/sanmuga-protpholio/)
+🌐 **Live GitHub Pages URL:** [https://sanmugapriyan2021-alt.github.io/sanmuga-protpholio/](https://sanmugapriyan2021-alt.github.io/sanmuga-protpholio/)  
+💼 **LinkedIn Profile:** [https://www.linkedin.com/in/sanmugapriyan-sowndrapandian-443132261/](https://www.linkedin.com/in/sanmugapriyan-sowndrapandian-443132261/)  
+📂 **GitHub Repositories:** [https://github.com/sanmugapriyan2021-alt](https://github.com/sanmugapriyan2021-alt)
 
 ---
 
-## 💻 Key Features
+## 🌟 Highlights & Tech Architecture
 
-- **Cyber-Modern Aesthetic:** Obsidian dark theme with glassmorphism, glowing ambient lighting, and refined typography (`Plus Jakarta Sans` & `Space Grotesk`).
-- **Interactive 60fps Particle Canvas:** Lightweight, hardware-accelerated constellation particle field with inter-node connections.
-- **Dynamic Typewriter Header:** Animated role showcase highlighting AI expertise, software development, and NCC leadership.
-- **Featured Projects Showcase:** High-impact project cards with tech stack badges, key feature breakdowns, and source/demo links:
-  - **D's Designer Boutique Web Portal** (Commercial Client Web Application)
-  - **AI Customer Sentiment & Review Classifier** (NLP Machine Learning Pipeline)
-  - **Retail Billing POS & Inventory Management** (Desktop/Enterprise Database Utility)
-  - **College Photography Club Exhibition Hub** (Interactive Media Showcase)
-- **Academic Pathway Timeline:** Glowing vertical timeline illustrating academic journey from schooling through BCA (Bharathiar University) to MCA at PSG Tech.
-- **Interactive Resume Modal:** On-demand professional resume viewer with built-in print and PDF download capability.
-- **Seamless Communication:** One-click email copying with toast notification, direct WhatsApp, Phone, LinkedIn, and GitHub links.
-- **100% Responsive:** Optimized layout tested across mobile, tablet, and desktop viewports with a custom drawer menu.
+- **Lead Developer & Architect:** R. S. Sanmugapriyan (Palani, Tamil Nadu)
+- **Education:**
+  - **PG:** Master of Computer Applications (MCA) — [PSG College of Technology, Coimbatore](https://www.psgtech.edu/)
+  - **UG:** Bachelor of Computer Applications (BCA) — [Sree Saraswathi Thyagaraja College (STC), Pollachi](https://stc.ac.in/)
+- **Core Talent:** Vibe Coding • Google Antigravity • Autonomous AI Workflows • C# .NET Desktop POS • Android Studio (Java/Kotlin) • Responsive Web Architectures
+- **UI/UX:** Google Cyber-Dark System with left-to-right horizontal auto-scrolling project showcase, 360° rotating avatar with flip inspection, gated WhatsApp verification, and 100% mobile responsive fit with zero horizontal drag.
 
 ---
 
-## 🛠️ Built With
+## 🚀 Commercial & Production Systems
 
-- **HTML5 & CSS3:** Semantic markup, CSS Custom Properties (Variables), Flexbox, CSS Grid, and custom keyframe animations.
-- **Modern JavaScript (ES6+):** Vanilla JS for zero-dependency speed, IntersectionObserver API for scroll animations, Canvas 2D API for particle effects.
-- **Font Awesome 6.5:** Vector icons for modern tech tags and social links.
-- **Google Fonts:** `Plus Jakarta Sans`, `Space Grotesk`, and `JetBrains Mono`.
+1. **D's Designer Couture Showroom (Coimbatore)**  
+   - Mobile-first bridal aari work and couture blouse catalog with instant WhatsApp order consultations.  
+   - 🌐 Live Site: [https://dsdesigner.co.in](https://dsdesigner.co.in)
+
+2. **RKG Swayambu Agro & Retail POS Ecosystem**  
+   - Comprehensive 3-tier agro manufacturing suite: C# Windows 11 Desktop Billing POS, Android CEO real-time management app, and customer web store.
+
+3. **Udaya Hollow Blocks (UDH) Manufacturing Portal (Singampunari)**  
+   - Precast concrete manufacturing and sales automation portal with dimension volume calculator, Windows POS, and Android dispatch tracker.
+
+4. **Prabhu Sawmill & Timber Works**  
+   - Industrial timber processing platform with Cubic Feet (CFT) wood volume calculation engines, C# Windows Desktop POS, and mobile monitoring.
+
+5. **Bala Cycle Mart Showroom**  
+   - Retail multi-brand bicycle catalog and service booking platform with geared MTB spec filters.
+
+6. **Royal Soda Factory**  
+   - Wholesale carbonated beverage distribution and crate delivery route management platform.
 
 ---
 
-## 📂 Project Structure
+## ⚖️ Legal & Copyright Protection
 
-```text
-├── index.html                   # Main portfolio application
-├── assets/
-│   └── profile.jpg              # High-resolution profile portrait
-├── .github/
-│   └── workflows/
-│       └── jekyll-gh-pages.yml  # GitHub Actions Pages deployment
-└── README.md                    # Project documentation
-```
-
----
-
-## 📬 Connect With Me
-
-- **Email:** [sanmugapriyan2021@gmail.com](mailto:sanmugapriyan2021@gmail.com)
-- **LinkedIn:** [linkedin.com/in/sanmugapriyan](https://www.linkedin.com/in/sanmugapriyan-sowndrapandian-443132261/)
-- **GitHub:** [github.com/sanmugapriyan2021-alt](https://github.com/sanmugapriyan2021-alt)
-- **Phone / WhatsApp:** +91 843 853 9264
+This portfolio and all its original software, designs, and project works are protected under **The Copyright Act, 1957 (India)**. Copyright protection is automatic upon creation in digital form. All Rights Reserved.

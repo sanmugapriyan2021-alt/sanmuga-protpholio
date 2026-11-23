@@ -814,3 +814,211 @@ img {
   .g-nav-links { display: none; }
   .g-footer-inner { grid-template-columns: 1fr; gap: 2rem; }
 }
+
+
+/* ========================================================
+   VIBE-CODING THEME ENHANCEMENTS & GLASSMORPHISM
+   ======================================================== */
+.vibe-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(135deg, rgba(138, 180, 248, 0.15), rgba(129, 201, 149, 0.15));
+  border: 1px solid rgba(138, 180, 248, 0.35);
+  color: var(--g-blue);
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 0.35rem 0.9rem;
+  border-radius: var(--radius-full);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  box-shadow: 0 0 16px rgba(138, 180, 248, 0.15);
+}
+
+.vibe-glow-text {
+  background: linear-gradient(135deg, #8ab4f8 0%, #c084fc 50%, #81c995 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+/* HORIZONTAL AUTO-SCROLL PROJECTS SYSTEM */
+.g-projects-scroll-section {
+  position: relative;
+  width: 100%;
+  padding: 1.5rem 0 2rem 0;
+}
+
+.g-scroll-header-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.g-scroll-status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.82rem;
+  color: var(--g-green);
+  background: rgba(129, 201, 149, 0.1);
+  border: 1px solid rgba(129, 201, 149, 0.25);
+  padding: 0.4rem 1rem;
+  border-radius: var(--radius-full);
+  font-family: var(--font-mono);
+}
+
+.g-scroll-pulse {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--g-green);
+  box-shadow: 0 0 10px var(--g-green);
+  animation: gScrollPulse 1.8s infinite ease-in-out;
+}
+
+@keyframes gScrollPulse {
+  0% { transform: scale(0.85); opacity: 0.6; }
+  50% { transform: scale(1.3); opacity: 1; box-shadow: 0 0 14px var(--g-green); }
+  100% { transform: scale(0.85); opacity: 0.6; }
+}
+
+.g-scroll-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.g-scroll-nav-btn {
+  background: var(--g-surface-elevated);
+  border: 1px solid var(--g-border-light);
+  color: var(--g-text-primary);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  font-size: 1.15rem;
+  user-select: none;
+}
+
+.g-scroll-nav-btn:hover {
+  background: var(--g-blue-container);
+  border-color: var(--g-blue);
+  color: var(--g-blue);
+  transform: scale(1.08);
+}
+
+.g-projects-scroll-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: var(--radius-md);
+  padding: 0.5rem 0.25rem 1.5rem 0.25rem;
+}
+
+.g-projects-scroll-wrapper::before,
+.g-projects-scroll-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.g-projects-scroll-wrapper::before {
+  left: 0;
+  background: linear-gradient(to right, var(--g-bg), transparent);
+}
+
+.g-projects-scroll-wrapper::after {
+  right: 0;
+  background: linear-gradient(to left, var(--g-bg), transparent);
+}
+
+.g-projects-scroll-track {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+  padding: 0.5rem 0.5rem 1rem 0.5rem;
+  cursor: grab;
+  user-select: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.g-projects-scroll-track::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.g-projects-scroll-track:active {
+  cursor: grabbing;
+}
+
+.g-scroll-card {
+  flex: 0 0 380px;
+  max-width: 380px;
+  background: rgba(30, 30, 30, 0.78);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--g-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1), border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.g-scroll-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(138, 180, 248, 0.45);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.6), 0 0 24px rgba(138, 180, 248, 0.2);
+}
+
+/* LINKEDIN DISPATCH POST CARD */
+.g-dispatch-card {
+  background: linear-gradient(135deg, rgba(20, 28, 45, 0.85), rgba(15, 18, 28, 0.95));
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(112, 181, 249, 0.3);
+  border-radius: var(--radius-md);
+  padding: 2.25rem;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 12px 36px rgba(0,0,0,0.55), 0 0 25px rgba(112, 181, 249, 0.12);
+}
+
+.g-dispatch-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #70b5f9, #81c995, #fdd663, #c084fc);
+}
+
+@media (max-width: 768px) {
+  .g-scroll-card {
+    flex: 0 0 86vw;
+    max-width: 320px;
+  }
+  .g-projects-scroll-wrapper::before,
+  .g-projects-scroll-wrapper::after {
+    width: 20px;
+  }
+  .g-dispatch-card {
+    padding: 1.5rem;
+  }
+}

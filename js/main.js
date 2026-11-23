@@ -3,6 +3,8 @@ document.addEventListener('DOMContentLoaded', () => {
   initAvatar360AndFlip();
   initWhatsAppAccessModal();
   initAppLauncher();
+  initProjectsAutoScroll();
+  initLinkedInCopy();
 });
 
 // 1. 360 Scroll Rotation + Click to Flip & Lock + Resume on Scroll
@@ -106,6 +108,111 @@ function initAppLauncher() {
   document.addEventListener('click', (e) => {
     if (!menu.contains(e.target) && e.target !== btn) {
       menu.classList.remove('show');
+    }
+  });
+}
+
+// 4. Horizontal Left-to-Right Continuous Auto-Scroll for Projects
+function initProjectsAutoScroll() {
+  const track = document.getElementById('projectsScrollTrack');
+  const statusEl = document.getElementById('scrollStatusText');
+  const toggleBtn = document.getElementById('scrollToggleBtn');
+  const prevBtn = document.getElementById('scrollPrevBtn');
+  const nextBtn = document.getElementById('scrollNextBtn');
+  
+  if (!track) return;
+
+  let isPaused = false;
+  let isHovered = false;
+  let isInteracting = false;
+  let resumeTimer = null;
+  const speed = 0.85; // smooth pixels per frame
+
+  function updateStatus(text, paused) {
+    if (statusEl) statusEl.textContent = text;
+    if (toggleBtn) toggleBtn.innerHTML = paused ? '&#9654;' : '&#10074;&#10074;';
+  }
+
+  function autoScrollLoop() {
+    if (!isPaused && !isHovered && !isInteracting) {
+      track.scrollLeft += speed;
+      // Loop seamlessly when near end
+      if (track.scrollLeft >= (track.scrollWidth - track.clientWidth - 2)) {
+        track.scrollLeft = 0;
+      }
+    }
+    requestAnimationFrame(autoScrollLoop);
+  }
+
+  // Hover pauses auto-scroll
+  track.addEventListener('mouseenter', () => {
+    isHovered = true;
+    updateStatus('Paused (Hover)', true);
+  });
+  track.addEventListener('mouseleave', () => {
+    isHovered = false;
+    if (!isPaused) updateStatus('Auto-Scrolling (L → R)', false);
+  });
+
+  // Touch on mobile pauses and resumes smoothly
+  track.addEventListener('touchstart', () => {
+    isInteracting = true;
+    clearTimeout(resumeTimer);
+    updateStatus('User Swiping', true);
+  }, { passive: true });
+
+  track.addEventListener('touchend', () => {
+    clearTimeout(resumeTimer);
+    resumeTimer = setTimeout(() => {
+      isInteracting = false;
+      if (!isPaused) updateStatus('Auto-Scrolling (L → R)', false);
+    }, 2000);
+  }, { passive: true });
+
+  // Toggle button (Play / Pause)
+  if (toggleBtn) {
+    toggleBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      isPaused = !isPaused;
+      updateStatus(isPaused ? 'Paused by User' : 'Auto-Scrolling (L → R)', isPaused);
+    });
+  }
+
+  // Left and Right buttons
+  if (prevBtn) {
+    prevBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      track.scrollBy({ left: -380, behavior: 'smooth' });
+    });
+  }
+  if (nextBtn) {
+    nextBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      track.scrollBy({ left: 380, behavior: 'smooth' });
+    });
+  }
+
+  requestAnimationFrame(autoScrollLoop);
+}
+
+// 5. LinkedIn Copy Post Helper
+function initLinkedInCopy() {
+  const btn = document.getElementById('copyLinkedInBtn');
+  const feedback = document.getElementById('copyFeedback');
+  const postTextEl = document.getElementById('linkedInPostContent');
+  if (!btn || !postTextEl) return;
+
+  btn.addEventListener('click', async () => {
+    try {
+      await navigator.clipboard.writeText(postTextEl.innerText.trim());
+      if (feedback) {
+        feedback.style.display = 'inline-block';
+        setTimeout(() => { feedback.style.display = 'none'; }, 3000);
+      }
+      btn.textContent = 'Copied to Clipboard! ✓';
+      setTimeout(() => { btn.textContent = 'Copy Post Text 📋'; }, 3000);
+    } catch (err) {
+      console.log('Clipboard fallback:', err);
     }
   });
 }
