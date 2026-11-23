@@ -17,6 +17,12 @@ function initAntigravityBackground() {
   const canvas = document.getElementById('antigravityCanvas');
   if (!canvas) return;
 
+  // Disable background dots animation completely on mobile screen view
+  if (window.innerWidth < 768) {
+    canvas.style.display = 'none';
+    return;
+  }
+
   const ctx = canvas.getContext('2d');
   let width, height;
   let particles = [];

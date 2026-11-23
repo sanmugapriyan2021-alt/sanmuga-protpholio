@@ -1198,3 +1198,114 @@ article {
     font-size: 1.15rem;
   }
 }
+
+/* ========================================================
+   OFFICIAL LOGOS FOR 9-DOTS WAFFLE MENU & MOBILE DOCK
+   ======================================================== */
+.g-app-tile .tile-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  overflow: hidden;
+  padding: 3px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+  transition: all 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.g-app-tile .tile-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.g-app-tile:hover .tile-icon {
+  border-color: var(--g-blue);
+  transform: scale(1.1);
+  box-shadow: 0 4px 14px rgba(138, 180, 248, 0.3);
+}
+
+/* MOBILE BOTTOM NAVIGATION DOCK (VISIBLE ONLY ON MOBILE) */
+.g-mobile-bottom-nav {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  /* HIDE BACKGROUND DOTS ANIMATION COMPLETELY ON MOBILE VIEW */
+  .g-antigravity-bg {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+  }
+
+  body {
+    padding-bottom: 75px !important;
+  }
+
+  .g-mobile-bottom-nav {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 64px;
+    background: rgba(18, 20, 26, 0.96);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    z-index: 1000;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 0.5rem;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.7);
+  }
+
+  .g-mobile-tab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.25rem;
+    color: var(--g-text-secondary);
+    text-decoration: none;
+    font-size: 0.74rem;
+    font-weight: 500;
+    padding: 0.4rem 0.75rem;
+    border-radius: var(--radius-sm);
+    transition: all 0.2s ease;
+    flex: 1;
+    max-width: 82px;
+  }
+
+  .g-mobile-tab svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+    transition: transform 0.2s ease;
+  }
+
+  .g-mobile-tab.active {
+    color: var(--g-blue);
+    font-weight: 700;
+  }
+
+  .g-mobile-tab.active svg {
+    fill: var(--g-blue);
+    transform: translateY(-2px);
+  }
+
+  /* Waffle menu width and positioning on mobile */
+  .g-waffle-menu {
+    width: 320px;
+    max-width: 92vw;
+    right: 0;
+    top: 52px;
+    padding: 1rem;
+    gap: 0.6rem;
+  }
+}
