@@ -1103,3 +1103,98 @@ img {
   color: var(--g-text-secondary);
   line-height: 1.45;
 }
+
+/* ========================================================
+   GOOGLE ANTIGRAVITY & GEMINI DYNAMIC BLUE-DOT WATERMARK CANVAS
+   ======================================================== */
+.g-antigravity-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.75;
+}
+
+/* Ensure foreground elements remain crystal clear above dynamic background */
+.g-appbar,
+.g-hero,
+.g-section,
+.g-footer,
+.g-modal-overlay,
+article {
+  position: relative;
+  z-index: 2;
+}
+
+/* OVERLAY EDGE NAVIGATION BUTTONS FOR CAROUSEL */
+.g-scroll-edge-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: rgba(18, 22, 34, 0.92);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1.5px solid var(--g-blue);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.35rem;
+  cursor: pointer;
+  z-index: 10;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.7), 0 0 16px rgba(138, 180, 248, 0.35);
+  transition: all 0.25s ease;
+  user-select: none;
+}
+
+.g-scroll-edge-btn:hover {
+  background: var(--g-blue);
+  color: #121212;
+  transform: translateY(-50%) scale(1.12);
+  box-shadow: 0 6px 22px rgba(138, 180, 248, 0.6);
+}
+
+.g-scroll-edge-btn.prev {
+  left: 8px;
+}
+
+.g-scroll-edge-btn.next {
+  right: 8px;
+}
+
+@media (max-width: 768px) {
+  .g-scroll-header-bar {
+    justify-content: center;
+    gap: 0.75rem;
+  }
+  .g-scroll-controls {
+    width: 100%;
+    justify-content: center;
+    margin-top: 0.25rem;
+  }
+  .g-scroll-nav-btn {
+    width: 44px;
+    height: 44px;
+    font-size: 1.25rem;
+    background: #1a2233;
+    border: 1.5px solid var(--g-blue);
+    color: #fff;
+  }
+  .g-scroll-status-badge {
+    font-size: 0.85rem;
+    padding: 0.45rem 1.1rem;
+    background: rgba(129, 201, 149, 0.15);
+    border-color: rgba(129, 201, 149, 0.4);
+  }
+  .g-scroll-edge-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 1.15rem;
+  }
+}
